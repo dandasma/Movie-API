@@ -1,0 +1,174 @@
+_type: export
+__export_format: 4
+__export_date: 2022-06-28T21:36:38.138Z
+__export_source: insomnia.desktop.app:v2022.3.0
+resources:
+  - _id: req_ccef91e4304a4d0aa3f5757fa567d6ce
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656427212161
+    created: 1656421553124
+    url: localhost:8000/movies
+    name: getMovies
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1656421553124
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    parentId: null
+    modified: 1656421523715
+    created: 1656421523715
+    name: Movie API
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_5c2024ae41eb421ab0a51d8a5459af1f
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656452170755
+    created: 1656422674388
+    url: localhost:8000/movies/1
+    name: getMovie
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1652156747212.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_334a09bc1d3c43d8b29db9767e91d75e
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656451137684
+    created: 1656425181224
+    url: localhost:8000/movies
+    name: createMovie
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "",
+        	"title": "toto",
+        	"year": 1995,
+        	"director": "Djamel",
+        	"imdb_rating": 7.5
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_8d7a644d22d74c8daedb05e2e4cd32fe
+    authentication: {}
+    metaSortKey: -1651623646473.5625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d93b21bb3f84462b8fb07d10b1173c14
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656451137134
+    created: 1656434498520
+    url: localhost:8000/movies/1
+    name: updateMovie
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+        		"title": "The Shawshank Redemption",
+        		"year": 1995,
+        		"director": {
+        			"first_name": "Djamel",
+        			"last_name": "Darabont"
+        		},
+        		"imdb_rating": 9.3
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_f9a4b0d1697342779ff8445d4f0710f7
+    authentication: {}
+    metaSortKey: -1651357096104.0938
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9dfa6eee3dbd474294b56df88574f8e8
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656434266131
+    created: 1656434261324
+    url: localhost:8000/movies/1
+    name: deleteMovie
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1651090545734.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_34f741b4af0f4d0258c487724afe366a98c7ed6f
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656421523724
+    created: 1656421523724
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1656421523724
+    _type: environment
+  - _id: jar_34f741b4af0f4d0258c487724afe366a98c7ed6f
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656421523727
+    created: 1656421523727
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_5d6877b8f76c40e5a30f4713cc88db77
+    parentId: wrk_38e185ec8d1f485eb9eb35d50c2aa273
+    modified: 1656421523718
+    created: 1656421523718
+    fileName: Movie API
+    contents: ""
+    contentType: yaml
+    _type: api_spec
